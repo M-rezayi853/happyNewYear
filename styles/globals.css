@@ -1,0 +1,40 @@
+.anime {
+  animation: animate 5s linear infinite;
+}
+.happy {
+  animation-delay: -0.2s;
+  filter: hue-rotate(180deg);
+}
+.new {
+  animation-delay: -0.7s;
+  filter: hue-rotate(90deg);
+}
+.year {
+  animation-delay: -0.5s;
+  filter: hue-rotate(200deg);
+}
+.soon {
+  animation-delay: -0.9s;
+  filter: hue-rotate(30deg);
+}
+@keyframes animate {
+  0%,
+  10%,
+  25%,
+  50%,
+  70%,
+  89%,
+  100% {
+    color: #222;
+    text-shadow: 0 0 5px #222;
+  }
+  5%,
+  25.5%,
+  60%,
+  70.1%,
+  95% {
+    color: #fff;
+    text-shadow: 0 0 5px #f0c, 0 0 15px #f0c, 0 0 40px #f0c, 0 0 60px #f0c,
+      0 0 80px #f0c, 0 0 100px #f0c;
+  }
+}
